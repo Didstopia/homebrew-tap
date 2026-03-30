@@ -5,21 +5,21 @@
 class Githubby < Formula
   desc "A powerful CLI and TUI utility for syncing GitHub repositories locally"
   homepage "https://github.com/Didstopia/githubby"
-  version "1.0.18"
+  version "1.0.19"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Didstopia/githubby/releases/download/v1.0.18/githubby_1.0.18_darwin_amd64.tar.gz"
-      sha256 "e0e24263ab6b710b3d97ff7480c35f769a0898900be6700f3b0fdf6e8b773691"
+      url "https://github.com/Didstopia/githubby/releases/download/v1.0.19/githubby_1.0.19_darwin_amd64.tar.gz"
+      sha256 "ce4d0e5998a09aff1d8f66803557c5dc1ba37819b4d323667f4d666c5a58c900"
 
       define_method(:install) do
         bin.install "githubby"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Didstopia/githubby/releases/download/v1.0.18/githubby_1.0.18_darwin_arm64.tar.gz"
-      sha256 "827f2e088b113b4863de49e98462e43a9375aba166d02e6f4125b9f8b0fa1dd5"
+      url "https://github.com/Didstopia/githubby/releases/download/v1.0.19/githubby_1.0.19_darwin_arm64.tar.gz"
+      sha256 "92a019e3e2b9cf12a7794273508147631d795821992cc70ca98e70051abfee2f"
 
       define_method(:install) do
         bin.install "githubby"
@@ -29,15 +29,15 @@ class Githubby < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Didstopia/githubby/releases/download/v1.0.18/githubby_1.0.18_linux_amd64.tar.gz"
-      sha256 "e26a278b527e26264c767dc2149f36ab1acf2f58f2475641c23b762a979e0c13"
+      url "https://github.com/Didstopia/githubby/releases/download/v1.0.19/githubby_1.0.19_linux_amd64.tar.gz"
+      sha256 "a790ab273cb36010819f5e348178e6098f5fd4410b8b0a74fa69df84a220ec80"
       define_method(:install) do
         bin.install "githubby"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Didstopia/githubby/releases/download/v1.0.18/githubby_1.0.18_linux_arm64.tar.gz"
-      sha256 "34b3922992d89960ca851196d82c99befca6e1b7f186fdca46c4810353dbb0ed"
+      url "https://github.com/Didstopia/githubby/releases/download/v1.0.19/githubby_1.0.19_linux_arm64.tar.gz"
+      sha256 "1f3f0ed48eb7ad2b160f8845235b6e46ac6fbc524632b89ce61d8dba3acc7b88"
       define_method(:install) do
         bin.install "githubby"
       end
